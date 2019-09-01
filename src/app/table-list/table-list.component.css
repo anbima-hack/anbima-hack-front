@@ -1,0 +1,12 @@
+.bola-quadrada{
+    border-radius: 25%;
+    border: solid 1px #ef5350;
+    background-color: #ef5350;
+    width: 30px;
+    height: 30px;
+}
+
+.bandeiras {
+    display: inline-block;
+    margin-left: 10px;
+}

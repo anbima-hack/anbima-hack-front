@@ -21,13 +21,26 @@
                               <tbody>
                                   <tr *ngFor="let item of restItems">
                                       <td>{{item.nome}}</td>
-                                      <td>{{item.valorImpacto}}</td>
+                                      <td *ngIf="item.valorImpacto != '' ">{{item.valorImpacto}}</td>
+                                      <td *ngIf="item.valorImpacto == '' ">
+                                            <div class="bandeiras" >
+                                                    <div class="bola-quadrada"></div>
+                                            </div>
+                                      </td>
                                       <td>{{item.descricao}}</td>
                                   </tr>
                               </tbody>
                           </table>
                       </div>
-                  </div>
+
+                    <div class="bandeiras" >
+                        <div class="bola-quadrada"></div>
+                    </div>
+
+                    <div class="bandeiras" >
+                        <div><span>Risco regulatorio</span></div>
+                    </div>
+                </div>
               </div>
           </div>
       </div>
