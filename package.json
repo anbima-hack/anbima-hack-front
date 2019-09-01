@@ -4,14 +4,13 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng start",
-    "heroku-postbuild": "ng build --prod"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve -o",
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
     "node": "10.9.0"
