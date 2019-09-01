@@ -4,7 +4,7 @@
           <div class="col-md-12">
               <div class="card card-plain">
                   <div class="card-header card-header-danger">
-                      <h4 class="card-title mt-0">Fatos relevantes</h4>
+                      <h4 class="card-title">Fatos relevantes</h4>
                       <p class="card-category"></p>
                   </div>
                   <div class="card-body">
@@ -12,7 +12,7 @@
                     <div *ngIf="undefined !== restItems">
 
                       <div class="table-responsive">
-                          <table class="table table-hover">
+                          <table class="table">
                               <thead class="">
                                   <th>Nome</th>
                                   <th>Valor do impacto </th>
@@ -61,16 +61,20 @@
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead class="">
-                                <th>Nome</th>
+                                <th>Título</th>
                                 <th>Descricão do impacto</th>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Bolsa multa xp por preterir ordens de clientes</td>
+                                    <td>
+                                        <a [routerLink]="[]" (click)="goToSpecificUrl('http://www.cvm.gov.br/noticias/arquivos/2019/20190828-1.html')">Audiência Pública Sandbox Regulatório</a>
+                                    </td>
                                     <td>Regulatório</td>
                                 </tr>
                                     <tr>
-                                    <td>Audiência Pública Sandbox Regulatório</td>
+                                    <td>
+                                        <a [routerLink]="[]" (click)="goToSpecificUrl('https://www.google.com.br/amp/s/www.jota.info/tributos-e-empresas/mercado/bolsa-condena-xp-investimentos-preterir-ordem-16082019/amp')">Bolsa multa xp por preterir ordens de clientes</a>
+                                    </td>
                                     <td>Regulatório</td>
                                 </tr>
                             </tbody>
