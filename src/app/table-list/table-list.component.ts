@@ -19,6 +19,10 @@ export class TableListComponent implements OnInit {
     this.getRestItems();
   }
 
+  goToSpecificUrl(url : string): void {
+    window.open(url, "_blank");
+  }
+
   getRestItems(): void {
     this.restItemsServiceGetRestItems().subscribe(
         restItems => {
