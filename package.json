@@ -1,5 +1,5 @@
 {
-  "name": "material-dashboard-angular",
+  "name": "hackathon-front",
   "version": "2.3.0",
   "license": "MIT",
   "scripts": {
@@ -9,10 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build"
   },
   "engines": {
-    "node": "10.1.0"
+    "node": "10.9.0"
   },
   "private": true,
   "dependencies": {
