@@ -1,51 +1,35 @@
 <div class="main-content">
   <div class="container-fluid">
       <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
               <div class="card card-chart">
                   <div class="card-header card-header-success">
                       <div class="ct-chart" id="dailySalesChart"></div>
                   </div>
                   <div class="card-body">
-                      <h4 class="card-title">Daily Sales</h4>
+                      <h4 class="card-title">Fatos Relevantes</h4>
                       <p class="card-category">
-                          <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+                        <p class="card-category">Conheça os fatos relevantes que compoem os seus fundos de investimentos</p>
                   </div>
                   <div class="card-footer">
                       <div class="stats">
-                          <i class="material-icons">access_time</i> updated 4 minutes ago
+                          <button [routerLink]="['/table-list']">Confira aqui </button> 
                       </div>
                   </div>
               </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
               <div class="card card-chart">
                   <div class="card-header card-header-warning">
                       <div class="ct-chart" id="websiteViewsChart"></div>
                   </div>
                   <div class="card-body">
-                      <h4 class="card-title">Email Subscriptions</h4>
-                      <p class="card-category">Last Campaign Performance</p>
+                      <h4 class="card-title">Notícias Relevantes Para o Mercado De Fundos </h4>
+                      <p class="card-category">Conheça as principais notícias relevantes que podem afetar o mercado de fundos de investimentos</p>
                   </div>
                   <div class="card-footer">
                       <div class="stats">
-                          <i class="material-icons">access_time</i> campaign sent 2 days ago
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card card-chart">
-                  <div class="card-header card-header-danger">
-                      <div class="ct-chart" id="completedTasksChart"></div>
-                  </div>
-                  <div class="card-body">
-                      <h4 class="card-title">Completed Tasks</h4>
-                      <p class="card-category">Last Campaign Performance</p>
-                  </div>
-                  <div class="card-footer">
-                      <div class="stats">
-                          <i class="material-icons">access_time</i> campaign sent 2 days ago
+                        <button [routerLink]="['/table-list']">Confira aqui </button> 
                       </div>
                   </div>
               </div>

@@ -147,4 +147,8 @@ export class DashboardComponent implements OnInit {
       this.startAnimationForBarChart(websiteViewsChart);
   }
 
+  checkoutFundos(){
+  
+  }
+
 }
