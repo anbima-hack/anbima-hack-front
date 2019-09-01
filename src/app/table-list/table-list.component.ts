@@ -12,38 +12,23 @@ export class TableListComponent implements OnInit {
 
   restItems: any;
   restItemsUrl = 'https://anbima-hack-back.herokuapp.com/api/v1/analiseFatos';
-  httpClient: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.getPost();
+    this.getRestItems();
   }
 
   getRestItems(): void {
     this.restItemsServiceGetRestItems().subscribe(
-      restItems => {
-        this.restItems = restItems;
-      }
-    )
+        restItems => {
+          this.restItems = restItems;
+        }
+      )
   }
 
   restItemsServiceGetRestItems() {
     return this.http.get<any[]>(this.restItemsUrl).pipe(map(data => data));
   }
 
-  getPost() {
-    this.httpClient.post(this.restItemsUrl,
-      {
-        "idClient": ""
-      })
-      .subscribe(
-        data => {
-          console.log("POST Request is successful ", data);
-        },
-        error => {
-          console.log("Error", error);
-        }
-      );
-  }
 }
