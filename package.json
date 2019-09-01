@@ -12,8 +12,8 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve -o"
   },
   "engines": {
-    "node": "6.11.0",
-    "npm": "3.10.10"
+    "node": "6.9.5",
+    "npm": "4.3.0"
   },
   "private": true,
   "dependencies": {
